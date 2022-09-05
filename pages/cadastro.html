@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="../public/assets/styles/default-config.css"
+        />
+        <link rel="stylesheet" href="../public/assets/styles/register.css" />
+        <title>Cadastrar | UpperSoft</title>
+    </head>
+    <body>
+        <header class="container-navbar">
+            <div class="logo">
+                <img
+                    src="../public/assets/icons/logo-uppersoft.svg"
+                    alt="Logo UpperSoft"
+                />
+            </div>
+        </header>
+        <main>
+            <section class="container-form">
+                <h1>Cadastro</h1>
+                <form action="" method="post" class="forms">
+                    <div class="container-info">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" />
+                    </div>
+                    <div class="container-info">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" />
+                    </div>
+                    <div class="container-info">
+                        <label for="estado">Estado</label>
+                        <select name="estado" id="estado">
+                            <option value="-1">Selecione seu estado</option>
+                        </select>
+                    </div>
+                    <div class="container-info">
+                        <label for="sexo">Sexo</label>
+                        <div class="container-generos">
+                            <div class="container-genero">
+                                <input
+                                    type="radio"
+                                    name="feminino"
+                                    id="feminino"
+                                />
+                                <label for="sexo">Feminino</label>
+                            </div>
+                            <div class="container-genero">
+                                <input
+                                    type="radio"
+                                    name="masculino"
+                                    id="masculino"
+                                />
+                                <label for="sexo">Masculino</label>
+                            </div>
+                            <div class="container-genero">
+                                <input type="radio" name="outros" id="outros" />
+                                <label for="sexo">Outros</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-info">
+                        <label for="senha">Senha</label
+                        ><input type="password" name="senha" id="senha" />
+                    </div>
+                    <div class="container-info">
+                        <label for="confirmar-senha">Confirmar senha</label
+                        ><input
+                            type="password"
+                            name="confirmar-senha"
+                            id="confirmar-senha"
+                        />
+                    </div>
+                    <span>A senha deve ter no minimo 6 caracteres</span>
+                    <div class="container-submit">
+                        <button type="submit">Cadastrar</button>
+                        <span>Já possui conta? <a href="../index.html">Entre aqui</a></span>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <script src="../public/assets/js/state.js"></script>
+    </body>
+</html>
