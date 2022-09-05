@@ -11,7 +11,7 @@ h1{
     background-color: var(--white);
     border-radius: 8px;
     gap: 20px;
-    margin-top: 30px;
+    margin:  200px 0 100px 0;
 }
 .forms{
     display: grid;
@@ -63,6 +63,9 @@ input[type='radio']{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .container-form{
+        margin:  100px 0 100px 0;
     }
     .container-info{
         width: 80vw;
