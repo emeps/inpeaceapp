@@ -27,7 +27,7 @@ h1{
     width: 100vw;
 }
 .forms > span {
-    color: var(--gray);
+    color: var(--dark);
     grid-column: 1/ span 2;
     text-align: start;
 }
