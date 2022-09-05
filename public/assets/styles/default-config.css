@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Helvetica Neue';
 }
 :root{
     --primary: #174DBA;
@@ -9,11 +10,26 @@
     --white: #FFFFFF;
     --dark: #505050;
 }
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-weight: normal;
+    src: url('../fonts/Helvetica_Neue_Medium.ttf')format('truetype');
+}
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    font-weight: bold;
+    src: url('../fonts/Helvetica_Neue_Bold.ttf')format('truetype');
+}
+
 input, button, select{  
     border-radius: 8px;
     border: solid 1px var(--primary);
     height: 45px;
     padding: 0 5px;
+}
+input, select{
+    font-size: 1.375rem;
+    color: var(--dark);
 }
 input,button,select, label{
     width: 100%;
@@ -21,6 +37,11 @@ input,button,select, label{
 label, a, h1{
     color: var(--primary);
     text-decoration: none;
+}
+h1, h3{
+    font-family:'Helvetica Neue Bold';
+    font-weight: bold;
+    font-size: 3rem;
 }
 span{
     width: 100%;
