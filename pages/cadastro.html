@@ -23,9 +23,9 @@
         <main>
             <section class="container-form">
                 <h1>Cadastro</h1>
-                <form action="" method="post" class="forms">
+                <form for="submit" class="forms">
                     <div class="container-info">
-                        <label for="nome">Nome</label>
+                        <label for="nome">Nome completo</label>
                         <input type="text" name="nome" id="nome" />
                     </div>
                     <div class="container-info">
@@ -35,7 +35,7 @@
                     <div class="container-info">
                         <label for="estado">Estado</label>
                         <select name="estado" id="estado">
-                            <option value="-1">Selecione seu estado</option>
+                            <option value="0">Selecione seu estado</option>
                         </select>
                     </div>
                     <div class="container-info">
@@ -44,24 +44,22 @@
                             <div class="container-genero">
                                 <input
                                     type="radio"
-                                    name="feminino"
+                                    name="sexo"
                                     id="feminino"
-                                    value="feminino"
                                 />
-                                <label for="sexo">Feminino</label>
+                                <label for="sexo" class="fem">Feminino</label>
                             </div>
                             <div class="container-genero">
                                 <input
                                     type="radio"
-                                    name="masculino"
+                                    name="sexo"
                                     id="masculino"
-                                    value="masculino"
                                 />
-                                <label for="sexo">Masculino</label>
+                                <label for="sexo" class="masc">Masculino</label>
                             </div>
                             <div class="container-genero">
-                                <input type="radio" name="outros" id="outros" value="outros" />
-                                <label for="sexo">Outros</label>
+                                <input type="radio"  name="sexo" id="outros" />
+                                <label for="sexo" class="others">Outros</label>
                             </div>
                         </div>
                     </div>
@@ -78,13 +76,15 @@
                         />
                     </div>
                     <span>A senha deve ter no minimo 6 caracteres</span>
+                    <div class="container-submit">
+                        <button name="submit" id="submit" type="submit">Cadastrar</button>
+                        <span>Já possui conta? <a href="../index.html">Entre aqui</a></span>
+                    </div>
                 </form>
-                <div class="container-submit">
-                    <button type="submit">Cadastrar</button>
-                    <span>Já possui conta? <a href="../index.html">Entre aqui</a></span>
-                </div>
             </section>
         </main>
         <script src="../public/assets/js/getStates.js"></script>
+        <script src="../public/assets/js/registerUser.js"></script>
+        
     </body>
 </html>
