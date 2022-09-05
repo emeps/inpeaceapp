@@ -82,11 +82,12 @@ body{
         grid-template-columns: auto auto;
     }
 }
-@media(max-height: 700px){
+@media (max-width:950px) {
     .section-users{
         margin-top: 150px;
     }
 }
+
 @media(max-width:710px){
     body{
         background-color: var(--gray);
