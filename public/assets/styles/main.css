@@ -1,42 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-:root{
-    --primary: #174DBA;
-    --gray: #EFF0F3;
-    --white: #FFFFFF;
-    --dark: #505050;
-}
-input, button{  
-    border-radius: 8px;
-    border: solid 1px var(--primary);
-}
-body{
-    background-color: var(--gray);
-    height: 100vh;
-    width: 100vw;
-}
-main{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-}
-
-/* Navbar */
-.container-navbar{
-    background-color: var(--primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 0;
-    max-height: 70px;
-}
-
 /* Section Forms */
 .container-form{
     display: flex;
@@ -57,14 +18,8 @@ main{
     gap: 8px;
     width: 100%;
 }
-.container-email > input, .container-password > input{
-    height: 45px;
-    padding: 0 5px;
-}
-.container-email > label, .container-password>label, a, h1{
-    color: var(--primary);
-    text-decoration: none;
-}
+
+
 .forms {
     margin-top: 15px;
     display: flex;
@@ -73,20 +28,4 @@ main{
     width: 80%;
     border-radius: 8px;
 }
-.container-submit > button{
-    width: 100%;
-    border:  none;
-    background-color: var(--primary);
-    height: 40px;
-    text-transform: uppercase;
-    color: var(--white);
-}
-span{
-    width: 100%;
-    text-align: center;
-}
-@media(max-width:810px){
-    body{
-        background-color: var(--white);
-    }
-}
+
